@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+   
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <title>Weather Forecasting</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="dates-wise.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div>
+<form action="/result" method="post">
+
+<div class="dash-banner-weather">
+        <marquee style="margin-top: 80px;color:red; font-size: 20px;">You can predict the weather for coming 3
+            Days</marquee>
+</div>
+ 
+  <center>  <label>Enter the Date</label>
+ <input type="date" name="Date" placeholder="Enter the date" format="dd/mm/yyyy"  required="required" step="0.1" min="4.0" max="40.0"/>
+ </center>
+<br>
+<br>
+
+<center><input type="submit" name="submit" value="Predict">  
+		  <div class="dash-banner-weather"></center>        
+<br>
+<div><center><input type="submit" name="submit" value="Cluster">  
+		  <div class="dash-banner-weather"></center></div>            
+
+ </div>
+
+          
+  </form>
+</body>
+<br>
+<br>
+<center>
+	<h1>{{prediction}}</h1>
+
+
+</center>
+
+</html>
